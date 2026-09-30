@@ -1,1 +1,253 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Vortex Motors — Concesionaria de motos 0km. Honda, Yamaha, Zanella y Rouser. Financiación, garantía oficial y entrega inmediata.">
+  <title>Vortex Motors | Motos 0km Honda, Yamaha, Zanella y Rouser</title>
+  <!-- Aquí irá Tailwind más adelante -->
+</head>
+<body>
 
+  <!-- ============ HEADER ============ -->
+  <header>
+    <div>
+      <a href="/" aria-label="Vortex Motors - Inicio">
+        <img src="/images/logo-vortex.svg" alt="Vortex Motors">
+      </a>
+
+      <nav aria-label="Navegación principal">
+        <ul>
+          <li><a href="/catalogo">Catálogo</a></li>
+          <li><a href="/marcas/honda">Honda</a></li>
+          <li><a href="/marcas/yamaha">Yamaha</a></li>
+          <li><a href="/marcas/zanella">Zanella</a></li>
+          <li><a href="/marcas/rouser">Rouser</a></li>
+          <li><a href="/financiacion">Financiación</a></li>
+          <li><a href="/nosotros">Nosotros</a></li>
+          <li><a href="/contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <button type="button" aria-label="Buscar">🔍</button>
+        <a href="/favoritos" aria-label="Favoritos">♡</a>
+        <a href="/cuenta" aria-label="Mi cuenta">👤</a>
+      </div>
+
+      <button type="button" aria-label="Abrir menú" aria-expanded="false">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ MAIN ============ -->
+  <main>
+
+    <!-- HERO -->
+    <section aria-labelledby="hero-title">
+      <h1 id="hero-title">Vortex Motors</h1>
+      <p>Encontrá tu próxima moto 0km. Honda, Yamaha, Zanella y Rouser con financiación y garantía oficial.</p>
+      <a href="/catalogo">Ver catálogo</a>
+      <a href="/financiacion">Simular cuota</a>
+      <img src="/images/hero-moto.jpg" alt="Moto destacada Vortex Motors">
+    </section>
+
+    <!-- BUSCADOR RÁPIDO -->
+    <section aria-labelledby="buscador-title">
+      <h2 id="buscador-title">Buscá tu moto</h2>
+      <form action="/catalogo" method="get">
+        <label for="filtro-marca">Marca</label>
+        <select id="filtro-marca" name="marca">
+          <option value="">Todas</option>
+          <option value="honda">Honda</option>
+          <option value="yamaha">Yamaha</option>
+          <option value="zanella">Zanella</option>
+          <option value="rouser">Rouser</option>
+        </select>
+
+        <label for="filtro-cilindrada">Cilindrada</label>
+        <select id="filtro-cilindrada" name="cilindrada">
+          <option value="">Todas</option>
+          <option value="110-125">110cc - 125cc</option>
+          <option value="150-200">150cc - 200cc</option>
+          <option value="250-400">250cc - 400cc</option>
+          <option value="500+">500cc o más</option>
+        </select>
+
+        <label for="filtro-uso">Tipo</label>
+        <select id="filtro-uso" name="uso">
+          <option value="">Todos</option>
+          <option value="cub">Cub / Trabajo</option>
+          <option value="street">Street</option>
+          <option value="naked">Naked</option>
+          <option value="deportiva">Deportiva</option>
+          <option value="custom">Custom</option>
+        </select>
+
+        <button type="submit">Buscar</button>
+      </form>
+    </section>
+
+    <!-- CATEGORÍAS POR TIPO -->
+    <section aria-labelledby="categorias-title">
+      <h2 id="categorias-title">Explorá por tipo</h2>
+      <ul>
+        <li><a href="/catalogo?uso=cub">Cub / Trabajo</a></li>
+        <li><a href="/catalogo?uso=street">Street</a></li>
+        <li><a href="/catalogo?uso=naked">Naked</a></li>
+        <li><a href="/catalogo?uso=deportiva">Deportiva</a></li>
+        <li><a href="/catalogo?uso=custom">Custom</a></li>
+      </ul>
+    </section>
+
+    <!-- MARCAS -->
+    <section aria-labelledby="marcas-title">
+      <h2 id="marcas-title">Nuestras marcas</h2>
+      <ul>
+        <li><a href="/marcas/honda"><img src="/images/marcas/honda.svg" alt="Honda"></a></li>
+        <li><a href="/marcas/yamaha"><img src="/images/marcas/yamaha.svg" alt="Yamaha"></a></li>
+        <li><a href="/marcas/zanella"><img src="/images/marcas/zanella.svg" alt="Zanella"></a></li>
+        <li><a href="/marcas/rouser"><img src="/images/marcas/rouser.svg" alt="Rouser"></a></li>
+      </ul>
+    </section>
+
+    <!-- MOTOS DESTACADAS -->
+    <section aria-labelledby="destacadas-title">
+      <h2 id="destacadas-title">Motos destacadas</h2>
+      <p>Las más elegidas por nuestros clientes</p>
+
+      <div>
+        <!-- Card de moto (repetible) -->
+        <article>
+          <a href="/motos/honda-cb300f-twister">
+            <img src="/images/motos/honda-cb300f.jpg" alt="Honda CB300F Twister 2025">
+          </a>
+          <p>Honda</p>
+          <h3><a href="/motos/honda-cb300f-twister">CB300F Twister</a></h3>
+          <p>300cc · Naked</p>
+          <p>$X.XXX.XXX</p>
+          <button type="button" aria-label="Agregar a favoritos">♡</button>
+          <a href="/motos/honda-cb300f-twister">Ver detalle</a>
+        </article>
+
+        <!-- ... más cards ... -->
+      </div>
+
+      <a href="/catalogo">Ver todas las motos</a>
+    </section>
+
+    <!-- FINANCIACIÓN -->
+    <section aria-labelledby="financiacion-title">
+      <h2 id="financiacion-title">Calculá tu cuota</h2>
+      <p>Financiación en cuotas fijas con bancos y planes oficiales.</p>
+      <a href="/financiacion">Ir al simulador</a>
+    </section>
+
+    <!-- BENEFICIOS -->
+    <section aria-labelledby="beneficios-title">
+      <h2 id="beneficios-title">¿Por qué elegir Vortex Motors?</h2>
+      <ul>
+        <li>
+          <h3>Garantía oficial</h3>
+          <p>Todas nuestras motos incluyen garantía de fábrica.</p>
+        </li>
+        <li>
+          <h3>Financiación a medida</h3>
+          <p>Planes en cuotas fijas con las mejores tasas.</p>
+        </li>
+        <li>
+          <h3>Entrega inmediata</h3>
+          <p>Stock disponible y entrega en 48hs.</p>
+        </li>
+        <li>
+          <h3>Service oficial</h3>
+          <p>Taller propio con repuestos originales.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- TESTIMONIOS -->
+    <section aria-labelledby="testimonios-title">
+      <h2 id="testimonios-title">Lo que dicen nuestros clientes</h2>
+      <ul>
+        <li>
+          <blockquote>
+            <p>"Excelente atención, me llevé mi Honda Wave en el día."</p>
+            <cite>— Juan P., Rosario</cite>
+          </blockquote>
+        </li>
+        <!-- ... más testimonios ... -->
+      </ul>
+    </section>
+
+    <!-- NEWSLETTER / CTA -->
+    <section aria-labelledby="newsletter-title">
+      <h2 id="newsletter-title">Enterate de las novedades</h2>
+      <p>Ofertas, lanzamientos y planes de financiación.</p>
+      <form action="/newsletter" method="post">
+        <label for="newsletter-email">Tu email</label>
+        <input type="email" id="newsletter-email" name="email" required placeholder="tu@email.com">
+        <button type="submit">Suscribirme</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer>
+    <div>
+      <img src="/images/logo-vortex.svg" alt="Vortex Motors">
+      <p>Concesionaria de motos 0km. Honda, Yamaha, Zanella y Rouser.</p>
+    </div>
+
+    <div>
+      <h2>Catálogo</h2>
+      <ul>
+        <li><a href="/catalogo">Todas las motos</a></li>
+        <li><a href="/marcas/honda">Honda</a></li>
+        <li><a href="/marcas/yamaha">Yamaha</a></li>
+        <li><a href="/marcas/zanella">Zanella</a></li>
+        <li><a href="/marcas/rouser">Rouser</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h2>Vortex Motors</h2>
+      <ul>
+        <li><a href="/nosotros">Nosotros</a></li>
+        <li><a href="/financiacion">Financiación</a></li>
+        <li><a href="/contacto">Contacto</a></li>
+        <li><a href="/faq">Preguntas frecuentes</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h2>Contacto</h2>
+      <address>
+        <p>av capdevilla 1855, cordoba capital</p>
+        <p><a href="tel:+5493511234567">+54 9 351 123-4567</a></p>
+        <p><a href="mailto:info@vortexmotors.com">info@vortexmotors.com</a></p>
+      </address>
+    </div>
+
+    <div>
+      <h2>Seguinos</h2>
+      <ul>
+        <li><a href="#" aria-label="Instagram">Instagram</a></li>
+        <li><a href="#" aria-label="Facebook">Facebook</a></li>
+        <li><a href="#" aria-label="WhatsApp">WhatsApp</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <p>&copy; 2025 Vortex Motors. Todos los derechos reservados.</p>
+      <ul>
+        <li><a href="/terminos">Términos y condiciones</a></li>
+        <li><a href="/privacidad">Política de privacidad</a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>
